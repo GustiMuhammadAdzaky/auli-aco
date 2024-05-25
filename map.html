@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Maps Polyline</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1MgLuZuyqR_OGY3ob3M52N46TDBRI_9k&callback=initMap" async defer></script>
+</head>
+<body>
+  <div id="map" style="height: 600px; width: 800px;"></div>
+  <script>
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 8,
+        center: { lat: 1.5, lng: 109.3 }
+      });
+var polylineCoordinates = [
+{ lat: 0.022587851399196168, lng: 1.9025511658737262 },
+{ lat: 0.022303683867621604, lng: 1.9022843413181563 },
+{ lat: 0.02219082191025512, lng: 1.9021805385122457 },
+{ lat: 0.020626208875126117, lng: 1.9018776617954647 },
+{ lat: 0.020517449304394475, lng: 1.9019036081102554 },
+{ lat: 0.01806745963054368, lng: 1.90187999076084 },
+{ lat: 0.01834391702815008, lng: 1.9044804505315518 },
+{ lat: 0.02195509717787325, lng: 1.9058233951940486 },
+{ lat: 0.02304306815453172, lng: 1.9072169017925678 },
+{ lat: 0.02376981732695782, lng: 1.9079214211080127 },
+{ lat: 0.02381521345207993, lng: 1.9080487066845297 },
+{ lat: 0.025478186333971697, lng: 1.9079123744224584 },
+{ lat: 0.02820384858838088, lng: 1.9110074526482308 },
+{ lat: 0.028987418116305896, lng: 1.9129630698327116 },
+{ lat: 0.02920128811208378, lng: 1.913146941080328 },
+{ lat: 0.028460259549734968, lng: 1.913668933657478 },
+{ lat: 0.028116506066634184, lng: 1.9142301323979853 },
+{ lat: 0.03472954979640486, lng: 1.9127200020169621 },
+{ lat: 0.035201996201004615, lng: 1.912914871930555 },
+{ lat: 0.035681260818615446, lng: 1.9131833353219367 },
+{ lat: 0.033963932401179786, lng: 1.9089541581169926 },
+{ lat: 0.033299690418263195, lng: 1.9083144008548047 },
+{ lat: 0.028827570426366078, lng: 1.906668209284261 },
+{ lat: 0.028511569594031894, lng: 1.9062880554976218 }
+];
+var polyline = new google.maps.Polyline({
+  path: polylineCoordinates,
+  geodesic: true,
+  strokeColor: '#FF0000',
+  strokeOpacity: 1.0,
+  strokeWeight: 2
+});
+polyline.setMap(map);
+
+new google.maps.Marker({
+  position: { lat: 0.022587851399196168, lng: 1.9025511658737262 },
+  map: map,
+  title: 'Pantai Bahari'
+});
+new google.maps.Marker({
+  position: { lat: 0.022303683867621604, lng: 1.9022843413181563 },
+  map: map,
+  title: 'Pantai Putri Serayi'
+});
+new google.maps.Marker({
+  position: { lat: 0.02219082191025512, lng: 1.9021805385122457 },
+  map: map,
+  title: 'Batu Lapak & Canggar'
+});
+new google.maps.Marker({
+  position: { lat: 0.020626208875126117, lng: 1.9018776617954647 },
+  map: map,
+  title: 'Pantai Tanjung Batu'
+});
+new google.maps.Marker({
+  position: { lat: 0.020517449304394475, lng: 1.9019036081102554 },
+  map: map,
+  title: 'Pantai Sinam'
+});
+new google.maps.Marker({
+  position: { lat: 0.01806745963054368, lng: 1.90187999076084 },
+  map: map,
+  title: 'Pantai Polaria'
+});
+new google.maps.Marker({
+  position: { lat: 0.01834391702815008, lng: 1.9044804505315518 },
+  map: map,
+  title: 'Danau Biru'
+});
+new google.maps.Marker({
+  position: { lat: 0.02195509717787325, lng: 1.9058233951940486 },
+  map: map,
+  title: 'Danau Sebedang'
+});
+new google.maps.Marker({
+  position: { lat: 0.02304306815453172, lng: 1.9072169017925678 },
+  map: map,
+  title: 'Rumah Melayu Sambas'
+});
+new google.maps.Marker({
+  position: { lat: 0.02376981732695782, lng: 1.9079214211080127 },
+  map: map,
+  title: 'Keraton Alwatzikhoebillah'
+});
+new google.maps.Marker({
+  position: { lat: 0.02381521345207993, lng: 1.9080487066845297 },
+  map: map,
+  title: 'Taman Lunggi'
+});
+new google.maps.Marker({
+  position: { lat: 0.025478186333971697, lng: 1.9079123744224584 },
+  map: map,
+  title: 'Bukit Piantus'
+});
+new google.maps.Marker({
+  position: { lat: 0.02820384858838088, lng: 1.9110074526482308 },
+  map: map,
+  title: 'Gua Maria Santok'
+});
+new google.maps.Marker({
+  position: { lat: 0.028987418116305896, lng: 1.9129630698327116 },
+  map: map,
+  title: 'Riam Sunge Banokng'
+});
+new google.maps.Marker({
+  position: { lat: 0.02920128811208378, lng: 1.913146941080328 },
+  map: map,
+  title: 'Riam Pancarek'
+});
+new google.maps.Marker({
+  position: { lat: 0.028460259549734968, lng: 1.913668933657478 },
+  map: map,
+  title: 'Riam Berasap'
+});
+new google.maps.Marker({
+  position: { lat: 0.028116506066634184, lng: 1.9142301323979853 },
+  map: map,
+  title: 'PLBN Aruk'
+});
+new google.maps.Marker({
+  position: { lat: 0.03472954979640486, lng: 1.9127200020169621 },
+  map: map,
+  title: 'Rumah Terbalik'
+});
+new google.maps.Marker({
+  position: { lat: 0.035201996201004615, lng: 1.912914871930555 },
+  map: map,
+  title: 'Batu Nenek'
+});
+new google.maps.Marker({
+  position: { lat: 0.035681260818615446, lng: 1.9131833353219367 },
+  map: map,
+  title: 'Telok Atong'
+});
+new google.maps.Marker({
+  position: { lat: 0.033963932401179786, lng: 1.9089541581169926 },
+  map: map,
+  title: 'Konservasi Penyu'
+});
+new google.maps.Marker({
+  position: { lat: 0.033299690418263195, lng: 1.9083144008548047 },
+  map: map,
+  title: 'Pantai Kampak'
+});
+new google.maps.Marker({
+  position: { lat: 0.028827570426366078, lng: 1.906668209284261 },
+  map: map,
+  title: 'Pantai Cemara'
+});
+new google.maps.Marker({
+  position: { lat: 0.028511569594031894, lng: 1.9062880554976218 },
+  map: map,
+  title: 'Pantai Lestari'
+});    }
+  </script>
+</body>
+</html>
